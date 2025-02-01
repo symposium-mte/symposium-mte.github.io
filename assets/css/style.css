@@ -23,13 +23,19 @@ body {
     font-size: 16px;
     overflow: hidden;
     background-color: #E8F9FF;
-    background-image: none; /*url('../img/somebg.jpg');*/
+    /* background-image: url('../img/BG1.JPG'); */
+
+
+    /* background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../img/BG1.JPG"); */
+
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
 
 .navbar {
+    font: bold;
+    background-color: white;
     transition: background-color 0.3s, color 0.3s;
 }
 .navbar.scrolled {
@@ -62,6 +68,7 @@ body {
     border-color: #000000; /* Change mobile menu link hover border color */
     color: #000000; /* Change mobile menu link hover text color */
 }
+
 .parallax {
     background-attachment: fixed;
 }
@@ -82,4 +89,9 @@ body {
 .text-gray-700{
     text-align: justify;
 
+}
+
+.header{
+    max-height: 40vh;
+    height: 40vh;
 }
