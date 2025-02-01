@@ -1,0 +1,353 @@
+<html>
+<head>
+<title>
+Materials Engineering
+</title>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<style>
+    .collapsible {
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1.25rem;
+        font-weight: bold;
+        background-color: #6482AD;
+        color: white;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: white;
+        margin-bottom: 20px;
+        transition: max-height 0.3s ease-out;
+    }
+    .session-header {
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        font-variant:small-caps;
+        border-bottom: lightblue 1px solid;
+    }
+</style>
+</head>
+<body>
+<div class="content-wrapper">
+<header>
+<nav class="navbar fixed w-full top-0 z-20 bg-transparent text-black">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex">
+<div class="-ml-2 mr-2 flex items-center md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-700 focus:outline-none focus:text-gray-700" type="button">
+<span class="sr-only">
+Open main menu
+</span>
+<i class="fas fa-bars">
+</i>
+</button>
+</div>
+<div class="flex-shrink-0 flex items-center">
+<img alt="Company logo placeholder image" class="h-8 w-auto" src="assets/img/IISclogo.png"/>
+</div>
+<div class="hidden md:ml-6 md:flex md:space-x-8">
+<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700" href="index.html">
+Home
+</a>
+<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700" href="events.html">
+Events
+</a>
+<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700" href="speakers.html">
+Speakers
+</a>
+<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700" href="schedule.html">
+Schedule
+</a>
+<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700" href="about.html">
+About Us
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="pt-2 pb-3 space-y-1">
+<a class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-indigo-700 bg-indigo-50" href="index.html">
+Home
+</a>
+<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="events.html">
+Events
+</a>
+<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="speakers.html">
+Speakers
+</a>
+<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="schedule.html">
+Schedule
+</a>
+<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="about.html">
+About Us
+</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="mt-10">
+<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+
+
+
+
+
+
+
+
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8">
+            Schedule
+        </h2>
+        <button class="collapsible"><i class="fas fa-chevron-down"></i> Day 1</button>
+        <div class="content">
+            <div class="session-header">Session 1</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr>
+                            <th class="font-normal font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">09:00 - 10:30</td>
+                            <td class="font-medium py-2 px-4 ">Main Hall</td>
+                            <td class="font-medium py-2 px-4 ">Dr. John Doe</td>
+                            <td class="font-medium py-2 px-4 ">Panel A</td>
+                            <td class="font-medium py-2 px-4 ">Opening Session: Innovations in Research</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="session-header">Session 2</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr >
+                            <th class="font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td class="font-medium py-2 px-4 ">11:00 - 12:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 101</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Jane Smith</td>
+                            <td class="font-medium py-2 px-4 ">Panel B</td>
+                            <td class="font-medium py-2 px-4 ">Session 1: Advances in AI</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">11:00 - 12:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 102</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Emily White</td>
+                            <td class="font-medium py-2 px-4 ">Panel C</td>
+                            <td class="font-medium py-2 px-4 ">Session 2: Biotechnology Breakthroughs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="session-header">Session 3</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr >
+                            <th class="font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td class="font-medium py-2 px-4 ">14:00 - 15:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 101</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Michael Brown</td>
+                            <td class="font-medium py-2 px-4 ">Panel D</td>
+                            <td class="font-medium py-2 px-4 ">Session 3: Quantum Computing</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">14:00 - 15:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 102</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Sarah Green</td>
+                            <td class="font-medium py-2 px-4 ">Panel E</td>
+                            <td class="font-medium py-2 px-4 ">Session 4: Renewable Energy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <button class="collapsible"><i class="fas fa-chevron-down"></i> Day 2</button>
+        <div class="content">
+            <div class="session-header">Session 1</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr >
+                            <th class="font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">09:00 - 10:30</td>
+                            <td class="font-medium py-2 px-4 ">Main Hall</td>
+                            <td class="font-medium py-2 px-4 ">Dr. John Doe</td>
+                            <td class="font-medium py-2 px-4 ">Panel A</td>
+                            <td class="font-medium py-2 px-4 ">Opening Session: Future of Technology</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="session-header">Session 2</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr >
+                            <th class="font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td class="font-medium py-2 px-4 ">11:00 - 12:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 101</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Jane Smith</td>
+                            <td class="font-medium py-2 px-4 ">Panel B</td>
+                            <td class="font-medium py-2 px-4 ">Session 5: Cybersecurity Trends</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">11:00 - 12:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 102</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Emily White</td>
+                            <td class="font-medium py-2 px-4 ">Panel C</td>
+                            <td class="font-medium py-2 px-4 ">Session 6: Health Informatics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="session-header">Session 3</div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white mb-6">
+                    <thead>
+                        <tr >
+                            <th class="font-normal py-2 px-4 ">Time</th>
+                            <th class="font-normal py-2 px-4 ">Location</th>
+                            <th class="font-normal py-2 px-4 ">Chair Member</th>
+                            <th class="font-normal py-2 px-4 ">Panel</th>
+                            <th class="font-normal py-2 px-4 ">Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td class="font-medium py-2 px-4 ">14:00 - 15:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 101</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Michael Brown</td>
+                            <td class="font-medium py-2 px-4 ">Panel D</td>
+                            <td class="font-medium py-2 px-4 ">Session 7: Space Exploration</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium py-2 px-4 ">14:00 - 15:30</td>
+                            <td class="font-medium py-2 px-4 ">Room 102</td>
+                            <td class="font-medium py-2 px-4 ">Dr. Sarah Green</td>
+                            <td class="font-medium py-2 px-4 ">Panel E</td>
+                            <td class="font-medium py-2 px-4 ">Session 8: Climate Change</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</main>
+<footer class=" text-black py-6" style="padding-left: 50px;padding-right: 50px;">
+    <div class="container mx-auto px-4">
+    <div class="flex flex-wrap justify-between">
+    <div class="w-full md:w-1/4 mb-4 md:mb-0">
+    <p class="mb-1 text-sm">Some generic information</p>
+    </div>
+    <div class="w-full md:w-1/4 mb-4 md:mb-0">
+    <p class="mb-1 text-sm"><i class="fas fa-phone-alt mr-2"></i> +91 9876543210</p>
+    <p class="mb-1 text-sm"><i class="fas fa-envelope mr-2"></i> symposium@iisc.ac.in</p>
+    <p class="mb-1 text-sm"> <i class="fas fa-map-marker-alt mr-2"></i> Dept. of Materials Engineering, IISc Banglore.</p>
+    </div>
+    <div class="w-full md:w-2/4">
+    <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.322572272167!2d77.56453677947155!3d13.015118681209943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17d3bea64f8b%3A0x7b02a5cde160c0c0!2sDepartment%20Of%20Materials%20Engineering!5e0!3m2!1sen!2sin!4v1738011112068!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    </div>
+    </footer>
+</div>
+<script>
+document.querySelector('button[aria-controls="mobile-menu"]').addEventListener('click', function() {
+var menu = document.getElementById('mobile-menu');
+if (menu.classList.contains('hidden')) {
+menu.classList.remove('hidden');
+} else {
+menu.classList.add('hidden');
+}
+});
+
+document.querySelector('.content-wrapper').addEventListener('scroll', function() {
+var navbar = document.querySelector('.navbar');
+if (this.scrollTop > 50) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+});
+
+</script>
+
+</body>
+</html>

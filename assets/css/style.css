@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'myfonthere';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://chirantandip.github.io/font/cmunbmr.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myfonthere';
+    font-style:normal;
+    font-weight: bold;
+    src: url('https://chirantandip.github.io/font/cmunsx.ttf') format('truetype');
+}
+
+* {
+    font-family: myfonthere;
+}
+
+body {
+    font-family: myfonthere;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 16px;
+    overflow: hidden;
+    background-color: #E8F9FF;
+    background-image: none; /*url('../img/somebg.jpg');*/
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Change navbar background color when scrolled */
+    backdrop-filter: blur(10px);
+    color: #000; /* Change navbar text color when scrolled */
+}
+.navbar.scrolled a {
+    color: #000; /* Change navbar link color when scrolled */
+}
+.navbar.scrolled button {
+    color: #000; /* Change navbar button color when scrolled */
+}
+.content-wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+}
+.content-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+#mobile-menu {
+    background-color: #ffffff; /* Change mobile menu background color */
+}
+#mobile-menu a {
+    color: #000000; /* Change mobile menu link color */
+}
+#mobile-menu a:hover {
+    background-color: #e5e5e5; /* Change mobile menu link hover background color */
+    border-color: #000000; /* Change mobile menu link hover border color */
+    color: #000000; /* Change mobile menu link hover text color */
+}
+.parallax {
+    background-attachment: fixed;
+}
+.hero-text {
+    color: #000; /* Change hero text color */
+}
+.hero-subtext {
+    color: #4a4a4a; /* Change hero subtext color */
+}
+.hero-button {
+    background-color: #000; /* Change hero button background color */
+    color: #fff; /* Change hero button text color */
+}
+.hero-button:hover {
+    background-color: #333; /* Change hero button hover background color */
+}
+
+.text-gray-700{
+    text-align: justify;
+
+}
