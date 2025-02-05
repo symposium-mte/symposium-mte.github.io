@@ -19,79 +19,154 @@
 
 body {
     font-family: myfonthere;
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     overflow: hidden;
-    background-color: #E8F9FF;
-    /* background-image: url('../img/BG1.JPG'); */
-
-
-    /* background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../img/BG1.JPG"); */
-
+    background-color: white;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
 
-.navbar {
-    font: bold;
-    background-color: white;
-    transition: background-color 0.3s, color 0.3s;
-}
-.navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.9); /* Change navbar background color when scrolled */
-    backdrop-filter: blur(10px);
-    color: #000; /* Change navbar text color when scrolled */
-}
-.navbar.scrolled a {
-    color: #000; /* Change navbar link color when scrolled */
-}
-.navbar.scrolled button {
-    color: #000; /* Change navbar button color when scrolled */
-}
 .content-wrapper {
     height: 100vh;
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
 }
 .content-wrapper::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-#mobile-menu {
-    background-color: #ffffff; /* Change mobile menu background color */
-}
-#mobile-menu a {
-    color: #000000; /* Change mobile menu link color */
-}
-#mobile-menu a:hover {
-    background-color: #e5e5e5; /* Change mobile menu link hover background color */
-    border-color: #000000; /* Change mobile menu link hover border color */
-    color: #000000; /* Change mobile menu link hover text color */
-}
-
-.parallax {
-    background-attachment: fixed;
-}
-.hero-text {
-    color: #000; /* Change hero text color */
-}
-.hero-subtext {
-    color: #4a4a4a; /* Change hero subtext color */
-}
-.hero-button {
-    background-color: #000; /* Change hero button background color */
-    color: #fff; /* Change hero button text color */
-}
-.hero-button:hover {
-    background-color: #333; /* Change hero button hover background color */
+    display: none;
 }
 
 .text-gray-700{
     text-align: justify;
-
 }
 
 .header{
     max-height: 40vh;
     height: 40vh;
+}
+
+.navbar {
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 0.1rem;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.navbar img {
+    height: 2rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar a:hover {
+    color: darkslateblue;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: darkgray;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #5B913B;
+    color: white;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 20px;
+    transition: max-height 0.3s ease-out;
+}
+.session-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-variant:small-caps;
+    border-bottom: lightblue 1px solid;
+}
+
+@media (max-width: 1000px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+    .menu {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        width: 100%;
+        background-color: white;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .menu a {
+        font-size: 1rem;
+        text-align: left;
+        padding: 0.1rem;
+        padding-left: 1.2rem;
+        width: 100%;
+    }
+    .menu a:hover{
+        background-color: lightskyblue;
+    }
+    .menu-icon {
+        display: block;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+
+.hero-bg {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+.hero-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.hero-bg img.active {
+    opacity: 1;
 }
