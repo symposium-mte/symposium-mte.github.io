@@ -1,110 +1,35 @@
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
 Materials Engineering
 </title>
-<script src="https://cdn.tailwindcss.com">
-</script>
+<script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
-<style>
-    .collapsible {
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 1.25rem;
-        font-weight: bold;
-        background-color: #6482AD;
-        color: white;
-        margin-bottom: 10px;
-        justify-content: space-between;
-    }
-    .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: white;
-        margin-bottom: 20px;
-        transition: max-height 0.3s ease-out;
-    }
-    .session-header {
-        font-weight: bold;
-        text-align: center;
-        padding: 10px;
-        font-variant:small-caps;
-        border-bottom: lightblue 1px solid;
-    }
-</style>
+<script src="assets/script.js"></script> 
 </head>
 <body>
 <div class="content-wrapper">
-<header>
-<nav class="navbar fixed w-full top-0 z-20 bg-transparent text-black">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between h-16">
-<div class="flex">
-<div class="-ml-2 mr-2 flex items-center md:hidden">
-<button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-700 focus:outline-none focus:text-gray-700" type="button">
-<span class="sr-only">
-Open main menu
-</span>
-<i class="fas fa-bars">
-</i>
-</button>
-</div>
-<div class="flex-shrink-0 flex items-center">
-<img alt="Company logo placeholder image" class="h-8 w-auto" src="assets/img/IISclogo.png"/>
-</div>
-<div class="hidden md:ml-6 md:flex md:space-x-8">
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="index.html">
-Home
-</a>
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="events.html">
-Events
-</a>
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="speakers.html">
-Speakers
-</a>
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="schedule.html">
-Schedule
-</a>
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="assets/Brochure_v5.pdf">
-Brochure
-</a>
-<a class="border-b-2 border-transparent text-black inline-flex items-center px-1 pt-1 text-sm hover:text-gray-700" href="about.html">
-About Us
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="md:hidden hidden" id="mobile-menu">
-<div class="pt-2 pb-3 space-y-1">
-<a class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-indigo-700 bg-indigo-50" href="index.html">
-Home
-</a>
-<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="events.html">
-Events
-</a>
-<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="speakers.html">
-Speakers
-</a>
-<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="schedule.html">
-Schedule
-</a>
-<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="assets/Brochure_v5.pdf">
-Brochure
-</a>
-<a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium" href="about.html">
-About Us
-</a>
-</div>
-</div>
-</nav>
+<header class="relative h-20 top-0 bg-cover bg-center">
+    <nav class="navbar">
+        <img src="assets/img/IISc_Master_Seal.jpg", style="height: 2rem;">
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="sponsors.html">Sponsors</a>
+            <a href="about.html">Our Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
 </header>
+
+
+
 <main class="mt-10">
 <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
 
@@ -116,7 +41,7 @@ About Us
 
 
     <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-        <h2 class="text-2xl font-bold text-gray-800 mb-8">
+        <h2 class="text-xl font-bold text-gray-800 mb-8">
             Schedule
         </h2>
 
@@ -302,7 +227,7 @@ About Us
 
 </div>
 </main>
-<footer class=" text-black py-6 bg-white opacity-75" style="padding-left: 50px;padding-right: 50px;">
+<footer class=" text-black py-6 opacity-75" style="padding-left: 50px;padding-right: 50px;">
     <div class="container mx-auto px-4">
     <div class="flex flex-wrap justify-between">
     <div class="w-full md:w-1/4 mb-4 md:mb-0">
@@ -322,42 +247,5 @@ Symposium for 38 years</p>
     </div>
     </footer>
 </div>
-<script>
-document.querySelector('button[aria-controls="mobile-menu"]').addEventListener('click', function() {
-var menu = document.getElementById('mobile-menu');
-if (menu.classList.contains('hidden')) {
-menu.classList.remove('hidden');
-} else {
-menu.classList.add('hidden');
-}
-});
-
-document.querySelector('.content-wrapper').addEventListener('scroll', function() {
-var navbar = document.querySelector('.navbar');
-if (this.scrollTop > 50) {
-navbar.classList.add('scrolled');
-} else {
-navbar.classList.remove('scrolled');
-}
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var coll = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-});
-
-</script>
-
 </body>
 </html>
