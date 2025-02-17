@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     background-color: white;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -52,7 +52,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color:white;
+    background-color: #E6E6E6;
     padding: 0.1rem;
     z-index: 1000;
     font-size: 1rem;
@@ -150,7 +150,6 @@ body {
     }
 }
 
-
 .hero-bg {
     position: relative;
     width: 100%;
@@ -169,4 +168,9 @@ body {
 }
 .hero-bg img.active {
     opacity: 1;
+}
+
+footer{
+  background-color: #E6E6E6;
+  padding-top: 40px;
 }
