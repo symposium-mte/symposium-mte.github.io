@@ -9,6 +9,13 @@ Materials Engineering
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <script src="assets/script.js"></script>
+<style>
+    @media (max-width: 640px) {
+        .text-smaller {
+            font-size: 0.575rem;
+        }
+    }
+</style>
 </head>
 <body>
 <div class="content-wrapper">
@@ -27,222 +34,526 @@ Materials Engineering
         <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
     </nav>
 </header>
-
-
-
 <main class="mt-0">
-<!-- Old table
-<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-
-
-
-
-
-
-
-
-    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-        <h2 class="text-xl font-bold text-gray-800 mb-8">
-            Schedule
-        </h2>
-
-        (To be Updated)
-        <button class="collapsible"><i class="fas fa-chevron-down"></i> Day 1</button>
-        <div class="content">
-            <div class="session-header">Session 1</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr>
-                            <th class="font-normal font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="session-header">Session 2</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr >
-                            <th class="font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr >
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="session-header">Session 3</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr >
-                            <th class="font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr >
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <button class="collapsible"><i class="fas fa-chevron-down"></i> Day 2</button>
-        <div class="content">
-            <div class="session-header">Session 1</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr >
-                            <th class="font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="session-header">Session 2</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr >
-                            <th class="font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr >
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="session-header">Session 3</div>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white mb-6">
-                    <thead>
-                        <tr >
-                            <th class="font-normal py-2 px-4 ">Time</th>
-                            <th class="font-normal py-2 px-4 ">Location</th>
-                            <th class="font-normal py-2 px-4 ">Chair Member</th>
-                            <th class="font-normal py-2 px-4 ">Panel</th>
-                            <th class="font-normal py-2 px-4 ">Topic</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr >
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                            <td class="font-medium py-2 px-4 "></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-</div>
-
--->
-
 <div class=" max-w-7xl m-auto py-6 sm:px-6 lg:px-8">
-  <center>
-  <object class="pdf"
-             data=
-             "Schedule.pdf#toolbar=0&navpanes=0&scrollbar=0"
-             width="70%"
-             height="100%">
-     </object>
-  </center>
+    
+        <div class="bg-white overflow-hidden mb-8">
+            <div class="overflow-x-auto text-justify">
+
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-gray-800">Day 1 Schedule</h2>
+                    <a href="assets/Schedule.pdf" download 
+                       class="px-4 py-2 bg-black text-white text-sm font-medium rounded-md shadow-md flex items-center gap-2 hover:bg-gray-900 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M6 20h12"/>
+                        </svg>
+                        Download
+                    </a>
+                </div>
+                
+                <table class="min-w-full bg-white text-smaller">
+                    <tbody>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Opening Ceremony</th>
+                        </tr>
+
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">09:30 am - 09:45 am</td>
+                            <td class="px-4 py-2 text-center">Welcome Address by the Chair</td>
+                        </tr>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Keynote Lecture</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">09:45 am - 10:45 am</td>
+                            <td class="px-4 py-2 text-center"><b>Dr. S.V. Rama Murty,</b> Director, Gas Turbine Rresearch Establishment, DRDO. </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2t">10:45 am - 11:00 am</td>
+                            <td class="px-4 py-2 text-center">High Tea</td>
+                        </tr>
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Paralell Session 1 :  KPA</th>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">11:00 am - 11:15 am</td>
+                            <td class="px-4 py-2">
+                                <b>Balaprasath Singh</b>: Spacer Cation Rigidity Dictates Structural and Excited State Dynamics in 2D Halide Perovskites
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">11:15 am - 11:30 am</td>
+                            <td class="px-4 py-2">
+                                <b>Mohammed Hadji PP</b>: Wafer-Scale Solution-Processed 2D-TMD Transistors and Circuits Enabled by Single-Flake Transport
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">11:30 am - 11:45 am</td>
+                            <td class="px-4 py-2">
+                                <b>Mayendra Singh</b>: Low-temperature fabricated solution-processed diodes for wireless paper electronics
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">11:45 am - 12:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Durgesh Borkar</b>: Modulating Band Offset through Interface Engineering of Cu2SnSe3-Based Heterojunctions for Efficient Charge Separation and Collection
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">12:00 pm - 12:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Pooja Purohit</b>: Nature of morphotropic phase boundary in the lead-free piezoelectric systems K1/2Bi1/2(M1/3Nb2/3)xTi1-xO3: M = Mg, Zn
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">12:15 pm - 12:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Anuragkoda Chandan Siri</b>: Screen printed micro-supercapacitors on paper with additive-free 1T MoS2 ink for sustainable energy solutions
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">12:30 pm - 12:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Kaushal Tiwari</b>: Development of tunable ferroelectric thin films for the bandpass filters in the satellite systems
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">12:45 pm - 01:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Getaw Abebe Tina</b>: Simultaneous enhancement of d33 and depolarization temperature of the morphotropic phase boundary composition of the Pb-free piezoceramic Na1/2Bi1/2TiO3– BaTiO3
+                            </td>
+                        </tr>
+                        
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Paralell Session 2 : KI Vasu</th>
+                        </tr>
+
+
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">11:00 am - 11:15 am</td>
+                            <td class="px-4 py-2">
+                                <b>Prasanth Soundappan</b>: Mechanism and mitigation of crack formation in laser based directed energy deposition of γ-TiAl powder
+                            </td>
+                        </tr>
+                        
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">11:15 am - 11:30 am</td>
+                            <td class="px-4 py-2">
+                                <b>Sourav Maji</b>: Impact of Ge as an alloying addition on microstructure and high-temperature mechanical properties of 2nd Generation TiAl alloy
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">11:30 am - 11:45 am</td>
+                            <td class="px-4 py-2">
+                                <b>Chetan Konkati</b>: Proton irradiation effects on multi-principal element alloy
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">11:45 am - 12:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Rajneesh KP Babu</b>: Room Temperature Creep in Ti6242 alloy
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">12:00 pm - 12:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Sita Choudhary</b>: Effect of process parameters and heat treatment on structure and mechanical properties of directed energy deposited Ti6242 alloy
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">12:15 pm - 12:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Suando Banerjee</b>: Effect of texture, grain boundary constitution, and molybdenum partitioning on corrosion and hydrogen permeation behavior of pulse electrodeposited Ni-Mo coatings
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">12:30 pm - 12:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Shubham Sisodia</b>: Enhancing fatigue resistance of Cr-Mn-Fe-Co-Ni system by varying composition and sigma-phase assisted grain-size reduction
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">12:45 pm - 01:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Divya Nalajala</b>: Towards Single Crystal Growth in CMSX-4 Superalloy Builds Using Laser Directed Energy Deposition
+                            </td>
+                        </tr>
+                        
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Lunch</th>
+                        </tr>
+
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2t">01:00 pm - 02:00 pm</td>
+                            <td class="px-4 py-2 text-center">Lunch Time</td>
+                        </tr>
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Invited Talk</th>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">02:00 pm - 02:50 pm</td>
+                            <td class="px-4 py-2 text-center"><b>Mr. Sankarappa Prasad,</b> Principle Engineer, Underwriters Laboratories.
+                            </td>
+                        </tr>
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Paralell Session 3 : KI Vasu</th>
+                        </tr>
+
+
+                        <<tr class="bg-gray-200">
+                            <td class="px-4 py-2">02:45 pm - 03:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Abhinav Chandraker</b>: Experimentally validated and empirically compared machine learning approach for predicting yield strength of additively manufactured multi-principal element alloys
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:00 pm - 03:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Shiba Sankar Dash</b>: DFT study of hydrogen interstitial solute interaction with dislocations in nickel
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:15 pm - 03:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Subramanian R S</b>: Exploring the state-of-the-art in quantum computing for computational materials science
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:30 pm - 03:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Swapnil Bhure</b>: A Roadmap for Producing Single-Crystal Ni-Based Superalloy Components Using Laser-Directed Energy Deposition
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:45 pm - 04:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Ankur Srivastava</b>: Diffusion analysis in binary and ternary Ni-based alloys following Experimental, Density Functional Theory (DFT) and Physics-informed neural network numerical inverse method (PINN)
+                            </td>
+                        </tr>
+                        
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Paralell Session 4 : KPA</th>
+                        </tr>
+
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">02:45 pm - 03:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Vimalkumar S</b>: Upcycling post-consumer recyclate of Polyamide 66 by controlling chain scission and crosslinking density
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:00 pm - 03:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Samvidha Das</b>: Design and Investigation of MIL-100 (Fe) Metal-Organic Frameworks for Controlled Drug Delivery
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:15 pm - 03:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Bharath Sriram Gugulothu</b>: 3D Bioprinted Metastatic Niches of Triple Negative Breast Cancer for Drug Screening
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:30 pm - 03:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Indranil Dey</b>: Recycling Reinvented: Converting PET Bottle Waste into 3D printable PCR Polypropylene Vitrimers for a Sustainable Future
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:45 pm - 04:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Nipun Jain</b>: Engineering 3D bio-printed Lung-on-a-Dish platform to investigate Pulmonary Fibrosis
+                            </td>
+                        </tr>
+                        
+
+
+                        
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Invited Talk</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">04:05 pm - 04:40 pm</td>
+                            <td class="px-4 py-2 text-center"><b>Dr. Chandan Mondal,</b> Scientist ‘G’, Defence Metallurgical Research Laboratory</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">04:40 pm - 04:50 pm</td>
+                            <td class="px-4 py-2 text-center">Tea Break</td>
+                        </tr>
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Poster and Materialography</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">04:50 pm - 05:45 pm</td>
+                            <td class="px-4 py-2 text-center">Poster and Materialography Presentation</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+                <h2 class="text-xl font-bold text-gray-800 mt-8 mb-2">
+                    Day 2 Schedule
+                </h2>
+
+
+                <table class="min-w-full bg-white text-smaller">
+                    <tbody>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Keynote Lecture</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">09:30 am - 10:45 am</td>
+                            <td class="px-4 py-2 text-center"><b>Prof. Raman Singh,</b>  Monash University, Australia</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">10:45 am - 11:00 am</td>
+                            <td class="px-4 py-2 text-center">High Tea</td>
+                        </tr>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Industry - Academia Panel Discussion</th>
+                        </tr>
+
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">11:00 am - 12:10 pm</td>
+                            <td class="px-4 py-2 text-center">
+                                <b> Dr. T Ramprabhu, </b> Joint Director, DRDO<br>
+                                <b> Dr. Prince Singh, </b> Lead Engineer, Bosch<br>
+                                <b> Dr. Manjini S, </b> Vice President, JSW
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">12:10 pm - 12:45 pm</td>
+                            <td class="px-4 py-2 text-center">Springer talk</td>
+                        </tr>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Lunch</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">12:45 pm - 02:00 pm</td>
+                            <td class="px-4 py-2 text-center">Lunch Break</td>
+                        </tr>
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Invited Talk</th>
+                        </tr>
+
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">02:00 pm - 02:35 pm</td>
+                            <td class="px-4 py-2 text-center"> <b> P. Rajamali, </b> Asst. Professor, MRC, IISc</td>
+                        </tr>
+                        
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Parallel Session 5 : KI Vasu</th>
+                        </tr>
+
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">02:45 pm - 03:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Suraj Kumar</b>: Development of High-temperature DIC (up to 1800 °C) for strain measurements
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:00 pm - 03:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Vamsi Krishna Pakki</b>: Effect of reduction per pass during high temperature rolling of Mg-1wt%Gd alloy on texture, mechanical and its corrosion properties
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:15 pm - 03:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Darshan C</b>: Creep and Stress Relaxation in Thin Films: Experiments, Modelling, and Materials Science-Based Insights for Reliability Improvement
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:30 pm - 03:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Kalyan D</b>: Development of High strength and High Conductive Cu-based alloys
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:45 pm - 04:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Bavithra M</b>: Enhanced Corrosion Resistance of AZ31 Magnesium Alloy through LDH Coating and 8-Hydroxyquinoline Intercalation
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">04:00 pm - 04:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Gudeta Jafo Muleta</b>: Simultaneous increase of d33 and Curie point of PZT by dilute rare earth doping: the phenomenon and the mechanism
+                            </td>
+                        </tr>
+                        
+
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Parallel Session 6 : KPA</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">02:45 pm - 03:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Arup Kumar Mandal</b>: Understanding Complex Magnetic Interfacial Exchange Interactions and Magnetic Tunnel Resistance Behaviour of Epitaxially Grown SrRuO3/BiFeO3/La0.7Sr0.3MnO3 Heterostructure
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:00 pm - 03:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Satyam Jena</b>: Harnessing Excited-State Charge Transfer for the Activation of Dark Triplet Excitons and Phosphorescence in Hybrid Organic-Inorganic 2D Perovskite
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:15 pm - 03:30 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Shikha Akshay Joshi</b>: Fabrication and analysis of oxide-based ferroelectric gated transistors using the Inkjet-Printing technique
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">03:30 pm - 03:45 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Bappa Das</b>: Semi-solid TIG-based Additive manufacturing of Al-15Mg2Si-4.5Si-0.01Sr0.015B composite
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">03:45 pm - 04:00 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Animesh Mandal</b>: Influence of Transition Metal Doping on the Exciton Dynamics in All-Inorganic Metal Halide Perovskite
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">04:00 pm - 04:15 pm</td>
+                            <td class="px-4 py-2">
+                                <b>Sachin Latiyan</b>: 4D printing of sericin: Transition from textile waste to medical wealth
+                            </td>
+                        </tr>
+                        
+                        
+
+                        <tr class="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+                            <th class="w-1/6 px-4 py-2 text-left"></th>
+                            <th class="w-5/6 px-4 py-2 text-center">Closing Ceremony</th>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">04:15 pm - 04:30 pm</td>
+                            <td class="px-4 py-2 text-center">Tea Break</td>
+                        </tr>
+
+                        <tr class="bg-gray-100">
+                            <td class="px-4 py-2">04:30 pm - 05:30 pm</td>
+                            <td class="px-4 py-2 text-center">Closing Ceremony</td>
+                        </tr>
+
+                        <tr class="bg-gray-200">
+                            <td class="px-4 py-2">07:00 pm - 09:00 pm</td>
+                            <td class="px-4 py-2 text-center">Dinner</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
-
-
-
 </main>
 <footer class=" text-black py-6 opacity-75" style="padding-left: 50px;padding-right: 50px;">
     <div class="container mx-auto px-4">
